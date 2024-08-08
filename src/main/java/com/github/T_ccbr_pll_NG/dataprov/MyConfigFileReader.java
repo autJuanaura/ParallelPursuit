@@ -42,7 +42,7 @@ public class MyConfigFileReader {
 	}
 
 	public String getUrl() {
-		String url = cypher.decrypt(properties.getProperty("ip"));
+		String url = properties.getProperty("site");
 		if (url != null)
 			return url;
 		else

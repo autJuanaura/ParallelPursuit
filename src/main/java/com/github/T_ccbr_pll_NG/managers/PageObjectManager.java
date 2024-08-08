@@ -2,14 +2,14 @@ package com.github.T_ccbr_pll_NG.managers;
 
 import org.openqa.selenium.WebDriver;
 
-import com.github.T_ccbr_pll_NG.pages.HomePage;
+import com.github.T_ccbr_pll_NG.pages.AuthenticationCodePage;
 import com.github.T_ccbr_pll_NG.pages.LogInPage;
 
 public class PageObjectManager {
 
 	private WebDriver webDriver;
 
-	private HomePage homePage;
+	private AuthenticationCodePage homePage;
 	private LogInPage loginPage;
 
 	public PageObjectManager(WebDriver webDriver) {
@@ -18,8 +18,8 @@ public class PageObjectManager {
 	}
 
 	// Short Hand If...Else
-	public HomePage getHomePage() {
-		return (homePage == null) ? homePage = new HomePage(webDriver) : homePage;
+	public AuthenticationCodePage getHomePage() {
+		return (homePage == null) ? homePage = new AuthenticationCodePage(webDriver) : homePage;
 	}
 
 	// General If...Else
