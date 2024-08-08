@@ -10,28 +10,28 @@ public class LogInPage extends BasePage {
 		super(miDriver);
 	}
 
-	@FindBy(css = "[placeholder='USERNAME']")
-	private WebElement usrInput;
-	@FindBy(css = "[placeholder='PASSWORD']")
+	@FindBy(id = "login_field")
+	private WebElement usernameInput;
+	@FindBy(name = "password")
 	private WebElement psswdInput;
-	@FindBy(css = "[class='btn-signin']")
+	@FindBy(name = "commit")
 	private WebElement signInButton;
 
 	public void setCredentials(String username, String psswd) {
 		setUserName(username);
-		setPsswd(psswd);
+		setPassword(psswd);
 		clickOnButton();
 	}
 
 	public void setUserName(String username) {
-		usrInput.sendKeys(username);
+		usernameInput.sendKeys(username);
 	}
 
 	public void clickOnButton() {
 		signInButton.click();
 	}
 
-	public void setPsswd(String psswd) {
+	public void setPassword(String psswd) {
 		psswdInput.sendKeys(psswd);
 
 	}

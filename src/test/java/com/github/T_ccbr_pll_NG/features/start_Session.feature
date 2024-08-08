@@ -4,5 +4,5 @@ Feature: net Bubble LogIn tests
 
   @sce001
   Scenario: initialize a new session successfully
-    When User enters username as "Brpb4bq=cdjcnUCBD=" and password as "hW/EyyCDLomcdfvlg=="
+    When User enters username as "Juansaintaurautomation@gmail.com" and password as "mLmvqrrhbX0BbsHP1nqwFB7YAecGAkTuYkfOl8gaR34="
     Then The user has been successfully authenticated
